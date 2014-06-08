@@ -116,21 +116,13 @@ class OpenXApiClient
      */
     private function send($method, $data, $prepend = array())
     {
-        try {
-            $this->client->prependParams($prepend);
-            foreach ($data as &$v) {
-                if ($v instanceof \OpenXApiClient\Info) {
-                    $v = $v->toArray();
-                }
+        $this->client->prependParams($prepend);
+        foreach ($data as &$v) {
+            if ($v instanceof \OpenXApiClient\Info) {
+                $v = $v->toArray();
             }
-            $response = $this->client->call($method, $data);
-        } catch (ResponseException $e) {
-            var_dump($e);
-            //Do something smarter?
-            throw $e;
         }
-
-        return $response;
+        return $this->client->call($method, $data);
     }
 
     /**

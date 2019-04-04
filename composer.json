@@ -5,7 +5,7 @@
     "keywords":     ["OpenX", "XML-RPC", "API", "client"],
     "minimum-stability": "dev",
     "homepage":     "https://github.com/btafoya/OpenXApiClient",
-    "license":      "GPLv2",
+    "license":      "LGP-2.1",
     "authors": [
         {
             "name": "Chris Nutting",

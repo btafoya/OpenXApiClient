@@ -1,10 +1,10 @@
 {
-    "name":         "rohea/openx-api-client",
+    "name":         "btafoya/openx-api-client",
     "type":         "library",
     "description":  "XML-RPC API client version 2 for OpenX ad server",
     "keywords":     ["OpenX", "XML-RPC", "API", "client"],
     "minimum-stability": "dev",
-    "homepage":     "https://github.com/Rohea/OpenXApiClient",
+    "homepage":     "https://github.com/btafoya/OpenXApiClient",
     "license":      "GPLv2",
     "authors": [
         {
